@@ -1,5 +1,3 @@
-import react from 'react';
-
 const AccountDetails = ({account}) => {
     return(
         <div className='account-details'>

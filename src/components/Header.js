@@ -1,10 +1,15 @@
 import React from "react"; 
-import logo from '../assets/bag.jpg'
+import {Link} from "react-router-dom";
+import logo from '../assets/bag.jpg';
+
 const Header = () => {
    return (
     <header>
-        <img src={logo} style={styles.logo} />
+        <img src={logo} style={styles.logo} alt="Logo"/>
         <h1>Hello, there!</h1>
+        <nav>
+          <Link to="/login">Login</Link>
+        </nav>
     </header>
    );
 }

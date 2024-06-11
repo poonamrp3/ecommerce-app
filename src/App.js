@@ -1,14 +1,17 @@
 // src/App.js
-import React from "react";
+import React, { useState } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Header from "./components/Header";
 import CategoryList from "./components/CategoryList";
 import ProductList from "./components/ProductList";
 import ProductDetail from "./components/ProductDetail";
 import AccountDetails from "./components/AccountDetails";
+import Login from "./components/Login";
+
 import "./App.css";
 
 function App() {
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
   const categories = ["Electronics", "Clothing", "Books"];
   const products = {
     Electronics: [
@@ -38,8 +41,9 @@ function App() {
           <Route path="/" element={<CategoryList categories={categories} />} />
           <Route path="/category/:categoryName" element={<ProductList products={products} />} />
           <Route path="/product/:productId" element={<ProductDetail products={products} />} />
+          <Route path="/login" element={<Login onLogin={setIsLoggedIn}/>}/>
         </Routes>
-        <AccountDetails account={account} />
+        {isLoggedIn && <AccountDetails account={account}/>}
       </div>
     </Router>
   );
