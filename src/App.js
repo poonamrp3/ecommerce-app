@@ -12,6 +12,12 @@ import "./App.css";
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [username, setUsername] = useState("");
+
+  const handleLogin = (username) => {
+    setIsLoggedIn(true);
+    setUsername(username);
+  }
   const categories = ["Electronics", "Clothing", "Books"];
   const products = {
     Electronics: [
@@ -36,14 +42,14 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <Header />
+        <Header isLoggedIn={isLoggedIn} username={username}/>
         <Routes>
           <Route path="/" element={<CategoryList categories={categories} />} />
           <Route path="/category/:categoryName" element={<ProductList products={products} />} />
           <Route path="/product/:productId" element={<ProductDetail products={products} />} />
-          <Route path="/login" element={<Login onLogin={setIsLoggedIn}/>}/>
+          <Route path="/login" element={<Login onLogin={handleLogin}/>}/>
+          <Route path="/account-details" element={<AccountDetails username={username}/>}/>
         </Routes>
-        {isLoggedIn && <AccountDetails account={account}/>}
       </div>
     </Router>
   );
