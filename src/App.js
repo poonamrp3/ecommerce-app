@@ -18,6 +18,12 @@ function App() {
     setIsLoggedIn(true);
     setUsername(username);
   }
+
+  const handleLogout = () => {
+    setIsLoggedIn(false);
+    setUsername("");
+  }
+
   const categories = ["Electronics", "Clothing", "Books"];
   const products = {
     Electronics: [
@@ -34,21 +40,16 @@ function App() {
     ],
   };
 
-  const account = {
-    name: "John Doe",
-    email: "john.doe@example.com"
-  };
-
   return (
     <Router>
       <div className="App">
-        <Header isLoggedIn={isLoggedIn} username={username}/>
+      <Header isLoggedIn={isLoggedIn} username={username}/> 
         <Routes>
           <Route path="/" element={<CategoryList categories={categories} />} />
           <Route path="/category/:categoryName" element={<ProductList products={products} />} />
           <Route path="/product/:productId" element={<ProductDetail products={products} />} />
           <Route path="/login" element={<Login onLogin={handleLogin}/>}/>
-          <Route path="/account-details" element={<AccountDetails username={username}/>}/>
+          <Route path="/account-details" element={<AccountDetails username={username} handleLogout={handleLogout}/>}/>
         </Routes>
       </div>
     </Router>
