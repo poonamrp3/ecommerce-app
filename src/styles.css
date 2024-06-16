@@ -2,196 +2,213 @@
 
 /* General Styles */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 0;
-  }
-  
-  header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #282c34;
-    padding: 10px 20px;
-    color: white;
-  }
-  
-  header img {
-    height: 50px;
-    margin-right: 20px;
-  }
-  
-  header h1 {
-    flex: 1;
-    text-align: left;
-  }
-  
-  nav {
-    margin-left: auto;
-  }
-  
-  nav a {
-    background-color: #61dafb;
-    color: #23409c;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    border: none;
-    cursor: pointer;
-  }
-  
-  /* Form Styles */
-  form {
-    max-width: 400px;
-    margin: 50px auto;
-    padding: 20px;
-    background-color: white;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-  }
-  
-  form div {
-    margin-bottom: 15px;
-  }
-  
-  form label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-  }
-  
-  form input[type="text"],
-  form input[type="password"] {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  
-  form button {
-    width: 100%;
-    padding: 10px;
-    background-color: #61dafb;
-    color: #23409c;
-    border: none;
-    border-radius: 5px;
-    font-weight: bold;
-    cursor: pointer;
-  }
-  
-  form button:hover {
-    background-color: #21a1f1;
-  }
-  
-  /* Account Details Styles */
-  .account-details {
-    max-width: 400px;
-    margin: 50px auto;
-    padding: 20px;
-    background-color: white;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-  }
-  
-  .account-details h2 {
-    margin-bottom: 15px;
-  }
-  
-  .account-details p {
-    margin-bottom: 10px;
-  }
-  
-  .account-details button {
-    background-color: #61dafb;
-    color: #23409c;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    border: none;
-    cursor: pointer;
-  }
-  
-  /* src/styles.css */
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header Styles */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #282c34;
+  padding: 10px 20px;
+  color: white;
+}
+
+.logo {
+  height: 50px;
+  margin-right: 20px;
+}
+
+.clickable-title {
+  cursor: pointer;
+  flex: 1;
+  text-align: left;
+  color: #61dafb;
+  transition: color 0.3s ease;
+}
+
+.clickable-title:hover {
+  color: #21a1f1;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.welcome-message {
+  margin-right: 20px;
+}
+
+.nav-link {
+  background-color: #61dafb;
+  color: #23409c;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.nav-link:hover {
+  background-color: #21a1f1;
+}
+
+/* Form Styles */
+form {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+form div {
+  margin-bottom: 15px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #61dafb;
+  color: #23409c;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #21a1f1;
+}
+
+/* Account Details Styles */
+.account-details {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.account-details h2 {
+  margin-bottom: 15px;
+}
+
+.account-details p {
+  margin-bottom: 10px;
+}
+
+.account-details button {
+  background-color: #61dafb;
+  color: #23409c;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
 
 /* Category List Styles */
 .category-list {
-    max-width: 600px;
-    margin: 50px auto;
-    padding: 20px;
-    background-color: white;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-  }
-  
-  .category-list h2 {
-    margin-bottom: 20px;
-    text-align: center;
-    color: #23409c;
-  }
-  
-  .category-list ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  .category-list li {
-    margin-bottom: 10px;
-  }
-  
-  .category-list li a {
-    display: block;
-    padding: 10px;
-    background-color: #61dafb;
-    color: #23409c;
-    text-decoration: none;
-    border-radius: 5px;
-    text-align: center;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
-  }
-  
-  .category-list li a:hover {
-    background-color: #21a1f1;
-  }
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.category-list h2 {
+  margin-bottom: 20px;
+  text-align: center;
+  color: #23409c;
+}
+
+.category-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.category-list li {
+  margin-bottom: 10px;
+}
+
+.category-list li a {
+  display: block;
+  padding: 10px;
+  background-color: #61dafb;
+  color: #23409c;
+  text-decoration: none;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.category-list li a:hover {
+  background-color: #21a1f1;
+}
 
 /* Product List Styles */
 .product-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    padding: 20px;
-  }
-  
-  .product {
-    background-color: white;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    text-align: center;
-    width: 200px;
-  }
-  
-  .product h3 {
-    color: #23409c;
-  }
-  
-  .product p {
-    color: #555;
-  }
-  
-  .product a {
-    text-decoration: none;
-    color: inherit;
-    transition: transform 0.2s ease;
-  }
-  
-  .product a:hover {
-    transform: scale(1.05);
-  }
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.product {
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  width: 200px;
+}
+
+.product h3 {
+  color: #23409c;
+}
+
+.product p {
+  color: #555;
+}
+
+.product a {
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.2s ease;
+}
+
+.product a:hover {
+  transform: scale(1.05);
+}
 
 /* Product Detail Styles */
 .product-detail {
