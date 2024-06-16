@@ -23,6 +23,8 @@ const Login = ({onLogin}) => {
             navigate("/");
         } else {
             alert("Invalid username or password");
+            // Ask user if he wants to create new account
+            navigate("/new-account");
         }
     };
 

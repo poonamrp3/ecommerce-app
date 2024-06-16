@@ -7,6 +7,7 @@ import ProductList from "./components/ProductList";
 import ProductDetail from "./components/ProductDetail";
 import AccountDetails from "./components/AccountDetails";
 import Login from "./components/Login";
+import newAccount from "./components/newAccount";
 
 import "./App.css";
 
@@ -50,6 +51,7 @@ function App() {
           <Route path="/product/:productId" element={<ProductDetail products={products} />} />
           <Route path="/login" element={<Login onLogin={handleLogin}/>}/>
           <Route path="/account-details" element={<AccountDetails username={username} handleLogout={handleLogout}/>}/>
+          <Route path="/new-account"/>
         </Routes>
       </div>
     </Router>
