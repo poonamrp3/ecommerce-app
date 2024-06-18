@@ -7,7 +7,7 @@ import ProductList from "./components/ProductList";
 import ProductDetail from "./components/ProductDetail";
 import AccountDetails from "./components/AccountDetails";
 import Login from "./components/Login";
-import newAccount from "./components/newAccount";
+import NewAccount from "./components/newAccount";
 
 import "./App.css";
 
@@ -29,7 +29,8 @@ function App() {
   const products = {
     Electronics: [
       { id: 1, name: "Laptop 1", description: "A high performance Laptop", price: 999.99 },
-      { id: 2, name: "SmartPhone", description: "A latest model SmartPhone", price: 799.99 }
+      { id: 2, name: "SmartPhone", description: "A latest model SmartPhone", price: 799.99 },
+      { id: 3, name: "SmartPhone 2", description: "A latest model SmartPhone 2", price: 999.99 }
     ],
     Clothing: [
       { id: 3, name: "T-shirt", description: "A comfortable t-shirt", price: 19.99 },
@@ -51,7 +52,7 @@ function App() {
           <Route path="/product/:productId" element={<ProductDetail products={products} />} />
           <Route path="/login" element={<Login onLogin={handleLogin}/>}/>
           <Route path="/account-details" element={<AccountDetails username={username} handleLogout={handleLogout}/>}/>
-          <Route path="/new-account"/>
+          <Route path="/new-account" element={<NewAccount/>}/>
         </Routes>
       </div>
     </Router>

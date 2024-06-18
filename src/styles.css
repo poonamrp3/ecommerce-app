@@ -180,7 +180,7 @@ form button:hover {
 .product-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 10px;
   justify-content: center;
   padding: 20px;
 }
@@ -189,9 +189,9 @@ form button:hover {
   background-color: white;
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  padding: 20px;
+  padding: 10px;
   text-align: center;
-  width: 200px;
+  width: 300px;
 }
 
 .product h3 {
@@ -237,4 +237,71 @@ form button:hover {
   font-size: 20px;
   color: #61dafb;
   margin-top: 20px;
+}
+
+/*login button*/
+.error{
+  color:red;
+  font-size:0.875em;
+  margin-top: 5px;
+}
+
+.form-group{
+  margin-bottom: 15px;
+}
+
+.login form{
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow:0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.login label{
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.login input{
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.login button{
+  width: 100%;
+  padding: 10px;
+  background-color: #61dafb;
+  color: #23409c;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.login button:disabled{
+  background-color: #ddd;
+  cursor: not-allowed;
+}
+
+/* Create NEw Account Styles */
+.create-account-button{
+  background-color: #61dafb;
+  color:#23409c;
+  margin-top: 10px;
+  width: 10px;
+}
+
+.create-account-button:hover{
+  background-color: #21a1f1;
+}
+
+/* Create account container to position the button */
+.create-account-container {
+  margin-top: 10px;
+  text-align: right;
 }

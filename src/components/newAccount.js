@@ -15,7 +15,7 @@ const NewAccount = () => {
         console.log("Form submitted:", { firstname, lastname, email, username, password });
 
         // Example: Redirect to home page after form submission
-        navigate("/");
+        navigate("/login");
     };
 
     return (
@@ -32,7 +32,7 @@ const NewAccount = () => {
                 </div>
                 <div>
                     <label>Email:</label>
-                    <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} />
+                    <input type="text" value={email} onChange={(e) => setEmail(e.target.value)} />
                 </div>
                 <div>
                     <label>Username:</label>
