@@ -1,22 +1,22 @@
-# 🛒 E-Commerce Web Application
+# E-Commerce Web Application
 
 An in-progress E-Commerce platform built with **ReactJS**, designed to offer seamless product browsing, user registration, and login functionalities. The application focuses on a responsive and visually engaging user interface using **CSS** and **Bootstrap**.
 
-## 🚀 Features
+## Features
 
-- 🔐 **User Authentication**  
+- **User Authentication**  
   - User **registration** and **login** functionality  
   - Local session persistence (in-progress)
 
-- 🛍️ **Product Browsing**  
+- **Product Browsing**  
   - View products grouped by categories  
   - Browse through featured collections (in-progress)
 
-- ⚙️ **Architecture & Components**  
+- **Architecture & Components**  
   - Modular React components for scalability  
   - State and props handling for dynamic rendering
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 E-commerce/
@@ -26,7 +26,7 @@ E-commerce/
   │   ├── *.css               # CSS files used in the project
 ```
 
-## 📊 Current Progress
+## Current Progress
 
 | Module                | Completion   |
 |-----------------------|--------------|
@@ -35,7 +35,7 @@ E-commerce/
 | Authentication        | In Progress  |
 | Product Management    | In Progress  |
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **Frontend**: ReactJS, JavaScript (ES6), Bootstrap 5, CSS3  
 - **Tools**: VS Code, Git, GitHub  
