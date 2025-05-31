@@ -28,6 +28,6 @@ E-commerce/
 
 ## Tech Stack
 
-- **Frontend**: ReactJS, JavaScript (ES6), Bootstrap 5, CSS3  
+- **Frontend**: ReactJS, JavaScript, HTML, CSS
 - **Tools**: VS Code, Git, GitHub  
 - **Future Plans**: Integration with backend for full stack functionality
