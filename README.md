@@ -26,15 +26,6 @@ E-commerce/
   │   ├── *.css               # CSS files used in the project
 ```
 
-## Current Progress
-
-| Module                | Completion   |
-|-----------------------|--------------|
-| Core Functionality     | 70%          |
-| UI/UX Improvements     | 50%          |
-| Authentication        | In Progress  |
-| Product Management    | In Progress  |
-
 ## Tech Stack
 
 - **Frontend**: ReactJS, JavaScript (ES6), Bootstrap 5, CSS3  
