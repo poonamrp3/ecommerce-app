@@ -1,6 +1,6 @@
 # E-Commerce Web Application
 
-An in-progress E-Commerce platform built with **ReactJS**, designed to offer seamless product browsing, user registration, and login functionalities. The application focuses on a responsive and visually engaging user interface using **CSS** and **Bootstrap**.
+An in-progress E-Commerce platform built with **ReactJS**, designed to offer product browsing, user registration, and login functionalities. The application focuses on a responsive and visually engaging user interface using **CSS** and **Bootstrap**.
 
 ## Features
 
